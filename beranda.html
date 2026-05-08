@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tugas Riva Aksara</title>
+    <style>
+        /* IMPORT FONT BERGAYA */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@400;700&family=Dancing+Script:wght@700&display=swap');
+
+        :root {
+            --pink-utama: #ff85a2;
+            --pink-soft: #ffc2d1;
+            --ungu-manis: #d4a5ff;
+            --putih-susu: #fffaff;
+            --hitam-tegas: #2d3436;
+            --gradasi-pelangi: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #84fab0);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--putih-susu);
+            /* Latar Belakang Pola Garis-Garis Halus */
+            background-image: linear-gradient(rgba(255, 133, 162, 0.1) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255, 133, 162, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* ORNAMEN BOLA BALON MELAYANG */
+        .ball {
+            position: fixed;
+            border-radius: 50%;
+            z-index: -1;
+            background: rgba(255, 255, 255, 0.6);
+            border: 2px dashed var(--pink-utama);
+            animation: float 8s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-40px) rotate(15deg); }
+        }
+
+        /* NAVIGASI MENU BERGAYA */
+        nav {
+            margin-top: 30px;
+            background: white;
+            padding: 15px 50px;
+            border-radius: 50px;
+            border: 3px dashed var(--pink-utama); /* Garis Putus-Putus Pink */
+            box-shadow: 0 10px 25px rgba(255, 133, 162, 0.2);
+            position: sticky;
+            top: 20px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--hitam-tegas);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--pink-utama);
+            text-shadow: 2px 2px var(--ungu-manis);
+        }
+
+        /* CONTAINER UTAMA */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            width: 90%;
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 60px;
+            border-radius: 60px;
+            border: 10px solid white;
+            box-shadow: 15px 15px 0px var(--pink-soft), 30px 30px 0px var(--ungu-manis);
+            text-align: center;
+            position: relative;
+        }
+
+        /* TULISAN JUDUL BESAR & BERGAYA */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            color: var(--hitam-tegas);
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin: 0;
+            text-shadow: 4px 4px 0px white, 8px 8px 0px var(--pink-utama);
+        }
+
+        .nama-mhs {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--pink-utama);
+            margin-top: 15px;
+            display: block;
+        }
+
+        /* GARIS PELANGI PUTUS-PUTUS */
+        .rainbow-divider {
+            height: 18px;
+            width: 100%;
+            background: var(--gradasi-pelangi);
+            margin: 35px 0;
+            border-radius: 50px;
+            border: 3px dashed white;
+        }
+
+        /* KOTAK PESAN / KONTEN */
+        .pesan-box {
+            background: white;
+            padding: 40px;
+            border-radius: 35px;
+            border: 3px dashed var(--pink-soft); /* Garis Putus-Putus Pink Lembut */
+            text-align: justify;
+            line-height: 1.8;
+            color: #444;
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.02);
+        }
+
+        .dosen-highlight {
+            color: var(--pink-utama);
+            font-weight: 700;
+            border-bottom: 2px dashed var(--ungu-manis);
+        }
+
+        /* SALAM PENUTUP */
+        .salam {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 12px 40px;
+            background: var(--hitam-tegas);
+            color: white;
+            border-radius: 50px;
+            font-weight: 700;
+            border: 3px dashed var(--pink-utama);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HIASAN BALON -->
+    <div class="ball" style="width: 120px; height: 120px; top: 10%; left: 5%;"></div>
+    <div class="ball" style="width: 80px; height: 80px; bottom: 20%; right: 5%; animation-delay: 2s;"></div>
+    <div class="ball" style="width: 50px; height: 50px; top: 40%; right: 8%; animation-delay: 4s;"></div>
+
+    <!-- MENU UTAMA -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- KARTU WEBSITE -->
+    <div class="card">
+        <h1>WEBSITE TUGAS<br>DESAIN WEB</h1>
+        <span class="nama-mhs">Riva Aksara</span>
+        
+        <p style="font-weight: 700; color: #666; margin-top: 10px;">
+            Mahasiswa Akademi Manajemen Informatika dan Komputer<br>
+            Universitas Bukittinggi
+        </p>
+
+        <div class="rainbow-divider"></div>
+
+        <div class="pesan-box">
+            <p><strong>Assalamualaikum warahmatullahi wabarakatuh.</strong></p>
+            <p>Dengan penuh rasa syukur, website ini saya selesaikan sebagai bagian dari Tugas Mata Kuliah Desain Web yang diampu oleh <span class="dosen-highlight">Ibu Efmi Maiyana, M.Kom.</span></p>
+            
+            <p>Terima kasih yang sebesar-besarnya saya ucapkan kepada Ibu Efmi Maiyana atas bimbingan, ilmu, dan arahan yang sangat berharga selama perkuliahan. Berkat kesabaran dan dedikasi Ibu, saya dapat memahami bagaimana prinsip arsitektur informasi dan <i>user experience</i> diterapkan dalam sebuah desain web yang terstruktur.</p>
+            
+            <p>Website ini saya rancang dengan konsep <strong>Clean & Responsive Design</strong>, sebagai wujud nyata dari penerapan ilmu manajemen sistem informasi yang telah Ibu ajarkan. Fokus utama: tampilan yang intuitif, navigasi yang efisien, dan konten yang mudah diakses di semua perangkat.</p>
+        </div>
+
+        <div class="salam">
+            Wassalamualaikum warahmatullahi wabarakatuh.
+        </div>
+    </div>
+
+</body>
+</html

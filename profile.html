@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Riva Aksara - Elegant Rose Theme</title>
+    <!-- Mengambil font dari Google Fonts agar lebih cantik -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .main-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 550px;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(216, 27, 96, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+
+        /* Garis aksen di atas kartu */
+        .main-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 5px;
+            background: #ad1457;
+            border-radius: 0 0 10px 10px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #ad1457; /* Pink Tua Manis */
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .sub-header {
+            text-align: center;
+            color: #880e4f;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .info-section {
+            margin-bottom: 25px;
+        }
+
+        .info-title {
+            color: #ad1457;
+            font-size: 0.9em;
+            font-weight: 700;
+            border-bottom: 2px solid #f8bbd0;
+            display: inline-block;
+            margin-bottom: 15px;
+            padding-bottom: 2px;
+        }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 15px;
+            background: #fff5f8;
+            border-radius: 12px;
+            font-size: 0.95em;
+        }
+
+        .info-label {
+            font-weight: 700;
+            color: #c2185b;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        .info-value {
+            color: #4a4a4a;
+            text-align: right;
+        }
+
+        .bio-box {
+            background-color: #fff;
+            border-left: 4px solid #ad1457;
+            padding: 15px 20px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .tag-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #ad1457;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(173, 20, 87, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <center><div>
+    <img src="WhatsApp Image 2026-04-27 at 09.40.36.jpeg" width="300px" height="300px"
+    </center>
+    </div>
+    
+
+    <div class="main-card">
+        <h1>Riva Aksara</h1>
+        <div class="sub-header">Manajemen Informatika <br> AMIK Bukittinggi</div>
+        
+        <div class="info-section">
+            <span class="info-title">IDENTITAS DIRI</span>
+            <div class="grid-info">
+                <div class="info-item">
+                    <span class="info-label">Tempat & Tgl Lahir</span>
+                    <span class="info-value">Tanjung Gadang, 13 Des 2005</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Jenis Kelamin</span>
+                    <span class="info-value">Perempuan</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Agama</span>
+                    <span class="info-value">Islam</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Domisili</span>
+                    <span class="info-value">Tanjung Gadang Jorong Lurah</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <span class="info-title">RIWAYAT PENDIDIKAN</span>
+            <div class="bio-box">
+                Dimulai dari 1 tahun di <strong>TK ABA Lurah Panampung</strong>, kemudian melanjutkan ke <strong>MIN 5 Agam</strong> selama 6 tahun. Setelah itu, saya menempuh pendidikan di <strong>SMPN 4 Tilatang Kamang</strong> dan berlanjut ke <strong>MAN 2 Agam</strong>. Saat ini, saya aktif sebagai mahasiswi semester 2 di <strong>AMIK Bukittinggi</strong>.
+            </div>
+        </div>
+
+        <div class="tag-container">
+            <div class="tag">#Perjalanan ilmu akuuu</div>
+        </div>
+    </div>
+
+</body>
+</html>
